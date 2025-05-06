@@ -26,6 +26,8 @@ ingress:
   annotations: 
   # kubernetes.io/ingress.class: nginx
   # kubernetes.io/tls-acme: "true"
+  meta.helm.sh/release-name: nginx-ingress
+  meta.helm.sh/release-namespace: nginx-ingress
   hosts:
     - host: localhost
       paths:
