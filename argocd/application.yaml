@@ -6,9 +6,12 @@ metadata:
 spec:
   project: default         
   source:
-    repoURL: 'https://github.com/cloudraftio/sre-assignment.git'    
-    targetRevision: main
-    path: 'sre-assignment/myapp/values.yaml'    
+    repoURL: 'https://github.com/ankonmukherjee00/argoproject.git'    
+    targetRevision: argoproject
+    path: .                       
+    helm:
+      valueFiles:
+        - values.yaml  
   destination:
     server: 'https://kubernetes.default.svc'  
     namespace: default    
