@@ -1,0 +1,9 @@
+{{- if .Values.configMAP }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-app-config
+  namespace: {{ .Values.namespace }}
+data:
+  Port: ""
+{{- end }}
